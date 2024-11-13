@@ -1,7 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaPhoneAlt } from "react-icons/fa"; // Icons for social media
-import { BsFillShieldLockFill } from "react-icons/bs"; // For police
-import { IoIosCall } from "react-icons/io"; // For ambulance
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Icons for social media
 
 const Footer = () => {
   return (
@@ -31,25 +29,9 @@ const Footer = () => {
           <FaInstagram size={30} />
         </a>
       </div>
-
-      {/* Important Emergency Numbers */}
-      <div className="flex justify-center space-x-8 mb-6">
-        <a href="tel:+4723003000" className="flex items-center text-white">
-          <IoIosCall size={24} className="mr-2" /> Ambulance: 113
-        </a>
-        <a href="tel:+4723005000" className="flex items-center text-white">
-          <BsFillShieldLockFill size={24} className="mr-2" /> Police: 112
-        </a>
-      </div>
-
-      {/* Additional Useful Links */}
       <div className="text-center">
-        <a href="/privacy-policy" className="text-white mr-4">
-          Privacy Policy
-        </a>
-        <a href="/terms-of-service" className="text-white">
-          Terms of Service
-        </a>
+        <span> Privacy Policy</span>
+        <span> Terms of Service </span>
       </div>
     </footer>
   );
